@@ -151,6 +151,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Awards Section */}
+      <section id="awards" className="py-20 bg-slate-900/50 border-t border-slate-800/80 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <Award className="w-6 h-6 text-amber-500" />
+            <h2 className="text-3xl font-bold text-white">Awards & Recognitions</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2024</span>
+              <h3 className="text-xl font-bold text-white">Berlin Indie Film Festival</h3>
+              <p className="text-slate-400 text-sm">Best Script ("All Alone")</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2024</span>
+              <h3 className="text-xl font-bold text-white">Roshani International Film Festival</h3>
+              <p className="text-slate-400 text-sm">Best Women Empowered Director ("All Alone")</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2022</span>
+              <h3 className="text-xl font-bold text-white">NYC Proclamations</h3>
+              <p className="text-slate-400 text-sm">City Councilor Amanda Farias (Dist-18) & Assembly Member Karines Reyes (Dist-87)</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2008</span>
+              <h3 className="text-xl font-bold text-white">BACSAS Award</h3>
+              <p className="text-slate-400 text-sm">Bangladesh Recognition</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2005</span>
+              <h3 className="text-xl font-bold text-white">Anannya Top Ten Achievers</h3>
+              <p className="text-slate-400 text-sm">Bangladesh</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2005</span>
+              <h3 className="text-xl font-bold text-white">Meena Media Award</h3>
+              <p className="text-slate-400 text-sm">Unicef Bangladesh</p>
+            </div>
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-2">
+              <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">2004</span>
+              <h3 className="text-xl font-bold text-white">International Emmy®</h3>
+              <p className="text-slate-400 text-sm">Journalistic work / Amrao Pari</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer id="contact" className="py-12 border-t border-slate-800 bg-slate-950 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">

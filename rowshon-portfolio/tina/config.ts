@@ -1,9 +1,12 @@
 import { defineConfig } from "tinacms";
 
+const clientId = process.env.NEXT_PUBLIC_TINA_CLIENT_ID;
+const token = process.env.TINA_TOKEN;
+
 export default defineConfig({
   branch: process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main",
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID ?? null,
-  token: process.env.TINA_TOKEN ?? null,
+  ...(clientId ? { clientId } : {}),
+  ...(token ? { token } : {}),
   build: {
     outputFolder: "admin",
     publicFolder: "public",
@@ -50,8 +53,6 @@ export default defineConfig({
           { type: "string", name: "role", label: "Role (e.g. Director & Writer)" },
           { type: "string", name: "category", label: "Category" },
           { type: "image", name: "poster", label: "Film Poster / Image" },
-          { type: "rich-text", name: "synopsis", label: "Synopsis" },
-          { type: "string", name: "awards", label: "Key Accolades", list: true },
         ],
       },
     ],

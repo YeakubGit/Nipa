@@ -2,12 +2,12 @@
   "name": "rowshon-ara-sarker-portfolio",
   "version": "1.0.0",
   "private": true,
-"scripts": {
-  "dev": "tinacms dev -c \"next dev\"",
-  "build": "TINA_PUBLIC_IS_LOCAL=true NEXT_PUBLIC_TINA_CLIENT_ID= TINA_TOKEN= tinacms build --local && next build",
-  "start": "next start",
-  "lint": "next lint"
-},
+  "scripts": {
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build --local && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@tinacms/cli": "^1.5.0",
     "lucide-react": "^0.300.0",
@@ -25,3 +25,4 @@
     "typescript": "^5.3.3"
   }
 }
+

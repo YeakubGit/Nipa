@@ -2,9 +2,9 @@
   "name": "rowshon-ara-sarker-portfolio",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
+"scripts": {
   "dev": "tinacms dev -c \"next dev\"",
-  "build": "TINA_PUBLIC_IS_LOCAL=true tinacms build --local && next build",
+  "build": "TINA_PUBLIC_IS_LOCAL=true NEXT_PUBLIC_TINA_CLIENT_ID= TINA_TOKEN= tinacms build --local && next build",
   "start": "next start",
   "lint": "next lint"
 },

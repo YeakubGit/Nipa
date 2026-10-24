@@ -1,0 +1,9 @@
+﻿node_modules
+.next
+out
+.env
+.env.local
+.vercel
+tina/__generated__
+public/admin
+*.log

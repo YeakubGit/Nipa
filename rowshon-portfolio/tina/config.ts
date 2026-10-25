@@ -55,6 +55,28 @@ export default defineConfig({
           { type: "string", name: "awards", label: "Key Accolades", list: true },
         ],
       },
+      {
+        name: "activism",
+        label: "Activism",
+        path: "content/activism",
+        fields: [
+          { type: "string", name: "title", label: "Title" },
+          { type: "string", name: "year", label: "Year" },
+          { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+          { type: "image", name: "image", label: "Image" },
+        ],
+      },
+      {
+        name: "awards",
+        label: "Awards",
+        path: "content/awards",
+        fields: [
+          { type: "string", name: "title", label: "Award Title" },
+          { type: "string", name: "organization", label: "Organization" },
+          { type: "string", name: "year", label: "Year" },
+          { type: "image", name: "badge", label: "Badge / Image" },
+        ],
+      },
     ],
   },
 });

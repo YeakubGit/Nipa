@@ -107,7 +107,7 @@ export default async function Home() {
                     <div className="relative aspect-[3/2] w-full">
                       <Image
                         src={film.poster}
-                        alt={film.title}
+                        alt={film.title ?? ""}
                         fill
                         sizes="(min-width: 768px) 33vw, 100vw"
                         className="object-cover"
@@ -157,7 +157,7 @@ export default async function Home() {
                   <div className="relative aspect-[16/10] w-full">
                     <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={item.title ?? ""}
                       fill
                       sizes="(min-width: 768px) 50vw, 100vw"
                       className="object-cover"
@@ -199,7 +199,7 @@ export default async function Home() {
                     <div className="relative h-16 w-16 mb-2">
                       <Image
                         src={a.badge}
-                        alt={a.title}
+                        alt={a.title ?? ""}
                         fill
                         sizes="64px"
                         className="object-contain"

@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import profileData from "../content/profile.json";
 import { Youtube, Facebook, Instagram, Linkedin, Mail, Award, Film, Heart } from "lucide-react";
 import Image from "next/image";
@@ -5,26 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Navigation Header */}
-      <header className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-xl font-bold tracking-wider text-amber-500">
-            ROWSHON ARA SARKER
-          </a>
-          <nav className="hidden md:flex gap-8 items-center text-sm font-medium">
-            <a href="#about" className="hover:text-amber-400 transition">About</a>
-            <a href="#films" className="hover:text-amber-400 transition">Films</a>
-            <a href="#activism" className="hover:text-amber-400 transition">Activism</a>
-            <a href="#awards" className="hover:text-amber-400 transition">Awards</a>
-            <a href="#contact" className="hover:text-amber-400 transition">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <a href={`mailto:${profileData.email}`} className="hidden sm:inline-flex px-4 py-2 text-sm bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-lg transition">
-              Get in Touch
-            </a>
-          </div>
-        </div>
-      </header>
+      <Header email={profileData.email} />
 
       {/* Hero Section */}
       <section id="about" className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 max-w-7xl mx-auto">

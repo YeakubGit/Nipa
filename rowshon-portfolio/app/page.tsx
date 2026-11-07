@@ -28,8 +28,12 @@ export default async function Home() {
     .sort((a, b) => yearValue(b.year) - yearValue(a.year));
 
   const awards = (awardsRes.data.awardsConnection.edges ?? [])
-    .flatMap((e) => (e?.node ? [e.node] : []))
-    .sort((a, b) => yearValue(b.year) - yearValue(a.year));
+  .flatMap((e) => (e?.node ? [e.node] : []))
+  .sort(
+    (a, b) =>
+      yearValue(a.year) - yearValue(b.year) ||
+      (a.title ?? "").localeCompare(b.title ?? "")
+  );
 
   return (
     <main className="min-h-screen">

@@ -3,7 +3,7 @@ title: All Alone
 year: '2024'
 role: Director and Writer
 category: Short Film
-poster: /uploads/All_Alone_2.jpg
+poster: /uploads/All_Alone_Poster.JPG
 synopsis: |
   Short film documenting working-class isolation and immigrant resilience in NYC. Accrued 6 international festival selections worldwide.
 awards:

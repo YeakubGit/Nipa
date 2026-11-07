@@ -149,7 +149,7 @@ export default async function Home() {
         <section id="activism" className="scroll-mt-20 py-20 px-6 max-w-7xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <Heart className="w-6 h-6 text-amber-500" />
-            <h2 className="text-3xl font-bold text-white">Community & Housing Justice</h2>
+            <h2 className="text-3xl font-bold text-white">Movements & Organizing</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {activism.map((item) => (

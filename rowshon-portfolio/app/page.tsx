@@ -108,7 +108,7 @@ export default async function Home() {
                   className="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/40 transition"
                 >
                   {film.poster && (
-                    <div className="relative aspect-[3/2] w-full">
+                    <div className="relative aspect-[2/3] w-full bg-slate-900">
                       <Image
                         src={film.poster}
                         alt={film.title ?? ""}

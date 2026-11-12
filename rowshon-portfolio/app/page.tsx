@@ -52,7 +52,7 @@ export default async function Home() {
             <p className="text-lg text-amber-400 font-medium">
               {profileData.title}
             </p>
-            <p className="text-slate-300 text-base md:text-lg leading-relaxed">
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed text-justify"> 
               {profileData.bio}
             </p>
 
